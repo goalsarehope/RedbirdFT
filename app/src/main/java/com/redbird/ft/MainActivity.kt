@@ -12,13 +12,13 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            MainScreen()
+            MainView()
         }
     }
 }
 
 @Composable
-private fun MainScreen() {
+private fun MainView() {
     RedbirdFTTheme {
         val navController = rememberNavController()
         NavGraph(navController)
